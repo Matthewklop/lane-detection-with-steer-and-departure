@@ -16,8 +16,14 @@
 import cv2
 import numpy as np
 import os
+import warnings
 from scipy import optimize
 from matplotlib import pyplot as plt, cm, colors
+
+
+warnings.filterwarnings("ignore", category=DeprecationWarning)
+
+
 
 # Defining variables to hold meter-to-pixel conversion
 ym_per_pix = 30 / 720
